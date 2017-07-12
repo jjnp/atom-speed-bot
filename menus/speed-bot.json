@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle speed-bot",
+        "command": "speed-bot:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "speed-bot",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "speed-bot:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
