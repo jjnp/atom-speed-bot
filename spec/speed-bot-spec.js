@@ -15,7 +15,7 @@ describe('SpeedBot', () => {
     activationPromise = atom.packages.activatePackage('speed-bot');
   });
 
-  describe('when the speed-bot:toggle event is triggered', () => {
+  describe('when the speed-bot:boost event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('SpeedBot', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'speed-bot:toggle');
+      atom.commands.dispatch(workspaceElement, 'speed-bot:boost');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('SpeedBot', () => {
 
         let speedBotPanel = atom.workspace.panelForItem(speedBotElement);
         expect(speedBotPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'speed-bot:toggle');
+        atom.commands.dispatch(workspaceElement, 'speed-bot:boost');
         expect(speedBotPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('SpeedBot', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'speed-bot:toggle');
+      atom.commands.dispatch(workspaceElement, 'speed-bot:boost');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('SpeedBot', () => {
         // Now we can test for view visibility
         let speedBotElement = workspaceElement.querySelector('.speed-bot');
         expect(speedBotElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'speed-bot:toggle');
+        atom.commands.dispatch(workspaceElement, 'speed-bot:boost');
         expect(speedBotElement).not.toBeVisible();
       });
     });

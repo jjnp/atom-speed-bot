@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "speed-bot:toggle"
+    "cmd-;": "speed-bot:boost"
   }
 }

@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle speed-bot",
-        "command": "speed-bot:toggle"
+        "label": "Insert code depending on environment",
+        "command": "speed-bot:boost"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "speed-bot",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "speed-bot:toggle"
+              "label": "Boost",
+              "command": "speed-bot:boost"
             }
           ]
         }

@@ -6,9 +6,9 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "speed-bot:toggle"
+    "atom-workspace": "speed-bot:boost"
   },
-  "repository": "https://github.com/atom/speed-bot",
+  "repository": "https://github.com/jaxo10/atom-speed-bot",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

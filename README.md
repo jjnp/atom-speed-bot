@@ -1,4 +1,4 @@
-# speed-bot package
+# speed-bot
 
 A short description of your package.
 
